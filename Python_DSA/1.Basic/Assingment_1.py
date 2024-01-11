@@ -13,7 +13,7 @@ print("miles = ", km * miles)
 x: int = int(input("enter the first number = "))
 y: int = int(input("enter the first number = "))
 z: int = int(input("enter the first number = "))
-a = (x + y + z) / 3
+a: float = (x + y + z) / 3
 print("Average is = ", a)
 
 rs: int = int(input("enter the rs details = "))
@@ -29,15 +29,15 @@ y: int = x % 3
 if y == 0:
     print("no is divisible by 3")
 else:
-    print ("no is not divisble by 3")
+    print("no is not divisble by 3")
 
 
 x: int = int(input("enter the no u want to check it is even or odd = "))
-y: int = x % 2 
+y: int = x % 2
 if y == 0:
     print("no is even")
 else:
-    print ("no is odd")
+    print("no is odd")
 
 x: int = int(input("enter the first side = "))
 y: int = int(input("enter the second side= "))
@@ -45,13 +45,12 @@ y: int = int(input("enter the second side= "))
 if y == x:
     print("its square")
 else:
-    print ("not square")
+    print("not square")
 
 
 x: int = int(input("enter the total no of games played = "))
 y: int = int(input("enter the total no of games won = "))
 z: int = int(input("enter the total no of games loss = "))
-tie :int = x-y-z
-points = ((y*4)+(tie*2))
-points = print("total poins for win =" , points)
-
+tie: int = x - y - z
+points = (y * 4) + (tie * 2)
+points = print("total poins for win =", points)

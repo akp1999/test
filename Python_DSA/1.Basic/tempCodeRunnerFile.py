@@ -1,6 +1,5 @@
-x: int = int(input("enter the total no of games played = "))
-y: int = int(input("enter the total no of games won = "))
-z: int = int(input("enter the total no of games loss = "))
-tie :int = x-y-z
-points = ((y*4)+(tie*2))
-points = print("total poins for win " , points)
+x: int = int(input("enter the first number = "))
+y: int = int(input("enter the first number = "))
+z: int = int(input("enter the first number = "))
+a :float = (x + y + z) / 3
+print("Average is = ", a)
