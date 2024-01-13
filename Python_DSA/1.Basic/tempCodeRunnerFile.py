@@ -1,5 +1,3 @@
-x: int = int(input("enter the first number = "))
-y: int = int(input("enter the first number = "))
-z: int = int(input("enter the first number = "))
-a :float = (x + y + z) / 3
-print("Average is = ", a)
+x:int = int(input("enter the purchased bill value ="))
+if  ((x%4==0 and x%100!=0) or (x%400==0)):
+    print("its leap year") 

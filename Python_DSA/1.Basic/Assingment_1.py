@@ -54,3 +54,22 @@ z: int = int(input("enter the total no of games loss = "))
 tie: int = x - y - z
 points = (y * 4) + (tie * 2)
 points = print("total poins for win =", points)
+
+
+x: int = int(input("enter the first no. = "))
+
+if (x%3==0) and (x%5==0):
+    print("FOOBAR")
+elif(x%3==0):
+    print("FOO")
+elif(x%5==0):
+    print("BAR")
+else:
+    print("FOOFOOBARBAR")
+
+
+
+
+
+
+
