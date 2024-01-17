@@ -1,14 +1,8 @@
-def discountedBill(amount:int):
-    if ( amount >50000):
-        print("final bill = ", amount - (amount*0.3))
-    elif ( amount >40000 and amount<50000):
-        print("final bill = ", amount- (amount*0.25))
-    elif ( amount >30000 and amount<39000):
-        print("final bill = ", amount - (amount*0.20))
-    elif ( amount >10000 and amount<30000):
-        print("final bill = ", amount - (amount*0.10))
-    else:
-        print("final bill = ",amount)
+def addition (n1:int , n2:int) -> int :
+    total = n1+n2
+    return total
 
-amount:int=int(input("enter the bill amount"))
-discountedBill(amount)
+n1 = int(input("enter the first number to be printed = "))
+n2 = int(input("enter second number to be printed = "))
+x= addition(n1,n2)
+print(x)
