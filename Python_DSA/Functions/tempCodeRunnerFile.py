@@ -1,8 +1,26 @@
-def addition (n1:int , n2:int) -> int :
-    total = n1+n2
-    return total
 
-n1 = int(input("enter the first number to be printed = "))
-n2 = int(input("enter second number to be printed = "))
-x= addition(n1,n2)
-print(x)
+def calculate_average(num1: int, num2: int, num3: int) -> float:
+    return (num1 + num2 + num3) / 3
+
+
+def is_average_greater_or_equal(average: float, fourth_number: int) -> bool:
+    return average >= fourth_number
+
+
+num1: int = int(input("Enter the first number: "))
+num2: int = int(input("Enter the second number: "))
+num3: int = int(input("Enter the third number: "))
+num4: int = int(input("Enter the fourth number: "))
+
+average_value: float = calculate_average(num1, num2, num3)
+
+# Check if the average is greater than or equal to the fourth number
+result = is_average_greater_or_equal(average_value, num4)
+
+# Display the result
+print(f"The average of {num1}, {num2}, and {num3} is: {average_value}")
+
+if result:
+    print(f"The average is greater than or equal to {num4}.")
+else:
+    print(f"The average is less than {num4}.")

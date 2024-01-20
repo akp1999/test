@@ -1,18 +1,11 @@
-def printNumbers(n1, n2):
-    if n1 < n2:
-        i = n1
-        while i <= n2:
-            print(i, end=" ")
-            i += 1
-        print()
-    elif n2 < n1:
-        i = n2
-        while i <= n1:
-            print(i, end=" ")
-            i += 1
-        print()
-    else:
-        print(n1)
+def calSum(n1: int, n2: int):
+    i = n1
+    total = 0
+    while i <= n2:
+        if i % 3 == 0 and i % 6 == 0:
+            total = total + i
+        i += 1
+    return total
 
-printNumbers(5, 8)
-printNumbers(9, 3)
+x = calSum(1, 20)
+print(x)
